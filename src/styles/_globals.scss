@@ -1,0 +1,59 @@
+//FONTS
+@font-face {
+  font-family: "Karla";
+  src: url(../../public/assets/fonts/Karla-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lufga-400";
+  src: url(../../public/assets/fonts/LufgaRegular.ttf);
+}
+
+@font-face {
+  font-family: "Lufga-SemiBold";
+  src: url(../../public/assets/fonts/LufgaSemiBold.ttf);
+}
+
+//VARIABLES
+
+//COLORS
+
+:root {
+  --pink600: #fe8f90;
+  --pink500: #e44e70;
+  --pink400: #fddad3;
+  --pink300: #ffede9;
+  --green300: rgba(93, 120, 0, 0.49);
+  // --green300: rgb(208, 255, 207);
+  --white400: rgb(244, 244, 244);
+  --grey400: rgb(151, 149, 149);
+  --black400: rgb(36, 35, 35);
+}
+
+//PADDINGS
+:root {
+  --padding-xs: 10px;
+  --padding-sm: 20px;
+  --padding-md: 30px;
+  --padding-lg: 40px;
+  --padding-xl: 50px;
+}
+
+//MARGINS
+:root {
+  --margin-sm: 10px;
+  --margin-md: 40px;
+  --margin-lg: 50px;
+}
+//GAPS
+:root {
+  --gap-xs: 10px;
+  --gap-sm: 20px;
+  --gap-md: 30px;
+}
+
+//BORDER-RADIUS
+:root {
+  --bdRadius-sm: 2px;
+  --bdRadius-md: 5px;
+  --bdRadius-lg: 10px;
+}

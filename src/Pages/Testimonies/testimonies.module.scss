@@ -1,0 +1,25 @@
+.testimoniesContainer {
+  margin-top: var(--margin-md);
+
+  .testimoniesTitle {
+    display: flex;
+    justify-content: space-between;
+    button {
+      outline: none;
+      background: var(--green300);
+      padding: var(--padding-xs);
+      color: var(--white400);
+      border: none;
+      text-transform: uppercase;
+      float: right;
+      cursor: pointer;
+    }
+  }
+  .testimonies ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap-xs);
+    padding: var(--padding-sm);
+    justify-content: center;
+  }
+}

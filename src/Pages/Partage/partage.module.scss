@@ -1,0 +1,57 @@
+.partageContainer {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  @media screen and (max-width: 1066px) {
+    width: 85%;
+  }
+  @media screen and (max-width: 668px) {
+    width: 90%;
+    margin: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    input[type="text"],
+    input[type="date"],
+    textarea {
+      appearance: none;
+      background: none;
+      outline: none;
+      border-style: none;
+      border-bottom: 1px var(--green300) solid;
+      border-radius: var(--bdRadius-sm);
+      font-family: "Lufga-400";
+      font-size: 1.1em;
+
+      &:focus {
+        color: var(--green300);
+        font-weight: bold;
+        border-bottom: 3px var(--green300) solid;
+      }
+    }
+
+    textarea {
+      resize: none;
+    }
+    button[type="submit"] {
+      width: 20%;
+      margin: 0 auto;
+      cursor: pointer;
+      background: var(--green300);
+      color: var(--white400);
+      padding: var(--padding-xs) var(--padding-lg);
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
+    }
+  }
+  .formMessage {
+    text-align: center;
+  }
+}

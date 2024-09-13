@@ -1,0 +1,12 @@
+.footer {
+  border-top: 1px var(--green300) solid;
+  margin-top: var(--margin-lg);
+  font-size: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  .copyright {
+    text-transform: uppercase;
+    text-align: start;
+  }
+}
