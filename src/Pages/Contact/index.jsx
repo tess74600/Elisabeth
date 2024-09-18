@@ -7,7 +7,12 @@ import { useForm } from "react-hook-form";
 import centralImg from "./assets/contactImg.jpg";
 
 const Contact = () => {
-  const { register, handleSubmit, reset } = useForm({
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors },
+  } = useForm({
     defaultValues: { firstname: "", name: "", email: "", message: "" },
   });
   let [formMess, setFormMess] = useState("");
@@ -18,10 +23,13 @@ const Contact = () => {
       email: data.email,
       message: data.message,
     };
-
+    // validerEmail(data.email);
     emailjs
-      .send("service_hvl03lp", "template_xwnkpde", templateParams, {
-        publicKey: "_aKAe_6v1I2JnKaaA",
+      // .send("service_hvl03lp", "template_xwnkpde", templateParams, {
+      //   publicKey: "_aKAe_6v1I2JnKaaA",
+      // })
+      .send("service_h6sm2xb", "template_a62mzem", templateParams, {
+        publicKey: "k9LqZB7VX6YvIXYpv",
       })
       .then(
         () => {
@@ -43,20 +51,20 @@ const Contact = () => {
       );
   };
 
-  // const [onFocus, setOnFocus]= useState(false)
   return (
     <>
       <div className={styles.contactContainer}>
         <div className={styles.infos}>
           <h2>Informations pratiques</h2>
           <p>
-            Je me déplace à votre domicile les lundis, mardi, jeudis et
-            vendredis – sur un périmètre géographique couvrant Lyon 1, Lyon 6 et
-            Lyon 3.
+            Je me déplace à votre domicile les lundis, mardis, jeudis de 9h à
+            15h et les vendredis de 9h à 18h sur un périmètre géographique
+            couvrant Lyon 1, Lyon 2, Lyon 3, Lyon 6 et Lyon 7.
           </p>
           <p className={styles.infosPrix}>
             Le tarif d’une séance est de<span>70 euros</span>.
           </p>
+          <p>Réglement par chèques ou espèces.</p>
           <p>
             Les séances ne sont pas remboursées par la Sécurité Sociale,
             certaines mutuelles peuvent néanmoins les prendre en charge au titre
@@ -98,8 +106,16 @@ const Contact = () => {
               name="email"
               id=""
               placeholder="Mail"
-              {...register("email", { required: "Votre mail est demandé" })}
+              // {...register("email", { required: "Votre mail est demandé" })}
+              {...register("email", {
+                required: "Required",
+                pattern: {
+                  value: /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i,
+                  message: "Cette adresse mail n'est pas valide",
+                },
+              })}
             />
+            <p className={styles.error}> {errors.email?.message}</p>
             <textarea
               name="message"
               id=""

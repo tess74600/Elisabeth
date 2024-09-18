@@ -4,7 +4,7 @@ import styles from "./about.module.scss";
 //IMG
 import leftImg from "./assets/photo.jpg";
 import leftImgBG from "./assets/photoNB.jpg";
-
+import logo from "./assets/logoarche.png";
 const About = () => {
   return (
     <>
@@ -28,6 +28,8 @@ const About = () => {
               profondeur à l’ARCHE (Académie pour la Recherche et la
               Connaissance en Hypnose Ericksonienne) pour en faire mon métier.
             </p>
+
+            <img src={logo} id={styles.logoImg} />
           </div>
         </div>
       </div>

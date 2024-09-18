@@ -8,11 +8,11 @@ const Mentions = () => {
         <h3>Editeur du site</h3>
         <ul>
           <li>Nom : Elisabeth Fournier</li>
-          <li>Adresse</li>
+          {/* <li>Adresse</li> */}
           <li>Téléphone: 06 64 52 72 29</li>
           <li>E-mail : elisabethfournier@outlook.com</li>
           <li>Statut professionnel : entrepreneur individuel</li>
-          <li>SIRET</li>
+          <li>SIRET: 93268144800019</li>
         </ul>
       </div>
       <div>

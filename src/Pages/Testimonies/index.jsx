@@ -22,11 +22,7 @@ const Testimonies = () => {
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste porro tenetur dolore facere alias, voluptates dolores est provident nisi veniam consectetur eos non, impedit repudiandae dolor, voluptatem quam odit ea?",
     },
   ];
-  // useEffect(() => {
-  //   axios
-  //     .get("https://www.themealdb.com/api/json/v1/1/search.php?s=" + content)
-  //     .then((res) => setMeals(res.data.meals));
-  // }, [content]);
+
   return (
     <div className={styles.testimoniesContainer}>
       <div className={styles.testimoniesTitle}>
@@ -40,9 +36,9 @@ const Testimonies = () => {
           {/* {cards.map((card) => (
             <TestimonieCard key={card.id} card={card} />
           ))} */}
-          {cards.map((card) => (
+          {/* {cards.map((card) => (
             <TestimonieCard key={card.id} card={card} />
-          ))}
+          ))} */}
         </ul>
       </div>
     </div>
