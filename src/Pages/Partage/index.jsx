@@ -17,12 +17,12 @@ const Partage = () => {
     };
     console.log(templateParams);
     emailjs
-      .send("service_hvl03lp", "template_xwnkpde", templateParams, {
-        publicKey: "_aKAe_6v1I2JnKaaA",
-      })
-      // .send("service_h6sm2xb", "template_a62mzem", templateParams, {
-      //   publicKey: "k9LqZB7VX6YvIXYpv",
+      // .send("service_hvl03lp", "template_xwnkpde", templateParams, {
+      //   publicKey: "_aKAe_6v1I2JnKaaA",
       // })
+      .send("service_h6sm2xb", "template_v24c9tv", templateParams, {
+        publicKey: "k9LqZB7VX6YvIXYpv",
+      })
       .then(
         () => {
           console.log("success");

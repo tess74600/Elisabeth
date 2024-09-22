@@ -1,17 +1,31 @@
 .testimonieCardContainer {
-  border: 1px green solid;
+  border: 1px var(--green300) solid;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  // align-items: center;
+  gap: 10px;
   max-width: 50%;
   flex: 1 0 40%;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px black;
+  box-shadow: 5px 5px 5px var(--black400);
 
-  // @media screen and (max-width: 700px) {
-  //   width: 80%;
-  //   flex: 1 0 80%;
-  // }
+  @media screen and (max-width: 800px) {
+    max-width: 90%;
+    flex: 1 0 90%;
+  }
+  .authorContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    h3 {
+      font-family: "Lufga-Semibold";
+      color: var(--green300);
+    }
+
+    h4 {
+      align-self: end;
+      font-style: italic;
+    }
+  }
 }

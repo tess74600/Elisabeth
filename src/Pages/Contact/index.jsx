@@ -59,10 +59,10 @@ const Contact = () => {
           <p>
             Je me déplace à votre domicile les lundis, mardis, jeudis de 9h à
             15h et les vendredis de 9h à 18h sur un périmètre géographique
-            couvrant Lyon 1, Lyon 2, Lyon 3, Lyon 6 et Lyon 7.
+            couvrant Lyon 1, Lyon 3 et Lyon 6 .
           </p>
           <p className={styles.infosPrix}>
-            Le tarif d’une séance est de<span>70 euros</span>.
+            Le tarif d’une séance (1h) est de 70 euros.
           </p>
           <p>Réglement par chèques ou espèces.</p>
           <p>
@@ -129,7 +129,9 @@ const Contact = () => {
           <p className={styles.formMessage}>{formMess}</p>
         </div>
       </div>
-      <img src={centralImg} id={styles.centralImg} />
+      <div className={styles.centralImgContainer}>
+        <img src={centralImg} id={styles.centralImg} />
+      </div>
     </>
   );
 };

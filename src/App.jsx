@@ -8,10 +8,12 @@ import MainLayout from "./Layouts/MainLayout";
 import Mentions from "./Pages/Mentions";
 import Testimonies from "./Pages/Testimonies";
 import Partage from "./Pages/Partage";
+import ScrollToTop from "./components/ScrollToTop";
 const App = () => {
   return (
     <BrowserRouter>
       <MainLayout>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
@@ -21,6 +23,7 @@ const App = () => {
 
           <Route path="/mentions" element={<Mentions />} />
           <Route path="/partage" element={<Partage />} />
+          <Route path="*/" element={<Home />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

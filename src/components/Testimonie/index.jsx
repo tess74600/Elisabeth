@@ -4,10 +4,10 @@ const TestimonieCard = ({ card }) => {
   console.log(card.author, card.message, card.date);
   return (
     <li className={styles.testimonieCardContainer}>
-      <h2>{card.author}</h2>
-      <h4>
-        <i>Publié le: {card.date}</i>
-      </h4>
+      <div className={styles.authorContainer}>
+        <h3>{card.author}</h3>
+        <h4>{card.date}</h4>
+      </div>
       <p>{card.message}</p>
     </li>
   );
