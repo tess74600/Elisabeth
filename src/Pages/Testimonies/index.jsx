@@ -19,6 +19,20 @@ const Testimonies = () => {
       message:
         "Elizabeth sait mettre à l'aise et se pose délicatement à sa juste place pour nous permettre de se recentrer sur soi en toute quiétude.Je la recommande vivement.",
     },
+    {
+      id: 3,
+      author: "Lucile Reynard",
+      date: "septembre 2024",
+      message:
+        "J'ai depuis longtemps un projet qui me tient à cœur et que j'ai du mal à concrétiser. Après la séance d'hypnose pendant laquelle je me suis projetée dans ce projet il m'a été très simple de me projeter et d'écrire de manière concrète ce projet. Il me reste encore des étapes à franchir pour le concrétiser mais la séance m'a montrée toute la joie et les bénéfices que je pourrais en tirer et partager avec d'autres. Merci pour ça Elizabeth !",
+    },
+    {
+      id: 4,
+      author: "Flavie CC",
+      date: "septembre 2024",
+      message:
+        "Première expérience d'hypnose réussie pour moi avec Elisabeth ainsi que toutes les autres qui ont suivies. Sa voie posée et envoûtante, son attention portée à la relation, sa juste place dans sa posture de praticienne font que je me suis sentie en toute confiance pour expérimenter l'hypnose et en apprécier l'utilité ! Je recommande chaleureusement Elisabeth.",
+    },
   ];
 
   return (
@@ -31,9 +45,11 @@ const Testimonies = () => {
       </div>
       <div className={styles.testimonies}>
         <ul>
-          {cards.map((card) => (
-            <TestimonieCard key={card.id} card={card} />
-          ))}
+          {cards
+            .sort((a, b) => b.id - a.id)
+            .map((card) => (
+              <TestimonieCard key={card.id} card={card} />
+            ))}
         </ul>
       </div>
     </div>
