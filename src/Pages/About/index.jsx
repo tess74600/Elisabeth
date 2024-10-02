@@ -5,6 +5,8 @@ import styles from "./about.module.scss";
 import leftImg from "./assets/photo.jpg";
 import leftImgBG from "./assets/photoNB.jpg";
 import logo from "./assets/logoarche.png";
+import logo2 from "./assets/logoArche2.png";
+
 const About = () => {
   return (
     <>
@@ -29,7 +31,8 @@ const About = () => {
               Connaissance en Hypnose Ericksonienne) pour en faire mon métier.
             </p>
 
-            <img src={logo} id={styles.logoImg} />
+            {/* <img src={logo} id={styles.logoImg} /> */}
+            <img src={logo2} id={styles.logoImg} alt="logo Arche" />
           </div>
         </div>
       </div>

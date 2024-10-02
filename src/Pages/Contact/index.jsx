@@ -59,7 +59,7 @@ const Contact = () => {
           <p>
             Je me déplace à votre domicile les lundis, mardis, jeudis de 9h à
             15h et les vendredis de 9h à 18h sur un périmètre géographique
-            couvrant Lyon 1, Lyon 3 et Lyon 6 .
+            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6 .
           </p>
           <p className={styles.infosPrix}>
             Le tarif d’une séance (1h) est de 70 euros.
