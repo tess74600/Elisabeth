@@ -7,7 +7,7 @@ const Home = () => {
     <>
       <div className={styles.background}>
         <h1>Elisabeth Fournier</h1>
-        <span>Praticienne en Hypnose Ericksonnienne</span>
+        <span>Praticienne en Hypnose Ericksonienne</span>
         <h3>Lyon</h3>
       </div>
     </>
