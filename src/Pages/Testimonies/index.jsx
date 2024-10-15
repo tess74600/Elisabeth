@@ -33,6 +33,13 @@ const Testimonies = () => {
       message:
         "Première expérience d'hypnose réussie pour moi avec Elisabeth ainsi que toutes les autres qui ont suivies. Sa voie posée et envoûtante, son attention portée à la relation, sa juste place dans sa posture de praticienne font que je me suis sentie en toute confiance pour expérimenter l'hypnose et en apprécier l'utilité ! Je recommande chaleureusement Elisabeth.",
     },
+    {
+      id: 5,
+      author: "Anne-So L",
+      date: "octobre 2024",
+      message:
+        "Ma fille de 10 ans est angoissée. Elle était en confiance avec Élisabeth. Ainsi Élisabeth lui a montré plusieurs exercices d auto hypnose que ma fille met en pratique aujourd'hui quand elle sent que son stress monte. Merci !!",
+    },
   ];
 
   return (
