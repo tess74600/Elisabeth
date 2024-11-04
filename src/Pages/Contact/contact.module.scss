@@ -2,27 +2,46 @@
   margin-top: var(--margin-md);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  @media screen and (max-width: 668px) {
+  @media screen and (max-width: 900px) {
     display: block;
   }
 
   .infos {
-    @media screen and (max-width: 668px) {
+    @media screen and (max-width: 900px) {
       width: 90%;
       margin: 0 auto;
-
-      // margin: 0;
     }
     .infosPrix {
       display: flex;
       gap: var(--gap-xs);
-      // font-family: "Lufga-Semibold";
     }
 
-    p {
-      &:last-of-type {
-        font-style: italic;
+    .iframeDiv {
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      margin-bottom: 20px;
+      flex-direction: column;
+      p {
+        align-self: flex-start;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: underline;
       }
+    }
+
+    .contactButton {
+      // width: 40%;
+      margin: 20px 0;
+      cursor: pointer;
+      background: var(--green300);
+      color: var(--white400);
+      padding: var(--padding-xs) var(--padding-lg);
+      text-transform: uppercase;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: none;
     }
   }
 
@@ -48,7 +67,7 @@
     @media screen and (max-width: 1066px) {
       width: 85%;
     }
-    @media screen and (max-width: 668px) {
+    @media screen and (max-width: 900px) {
       width: 90%;
       margin: 0 auto;
 

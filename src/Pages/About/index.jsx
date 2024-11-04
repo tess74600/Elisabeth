@@ -4,8 +4,9 @@ import styles from "./about.module.scss";
 //IMG
 import leftImg from "./assets/photo.jpg";
 import leftImgBG from "./assets/photoNB.jpg";
-import logo from "./assets/logoarche.png";
-import logo2 from "./assets/logoArche2.png";
+import logo from "./assets/Logo SDMH.png";
+// import logo2 from "./assets/logoArche2.png";
+import logo2 from "./assets/logoSansBg.png";
 
 const About = () => {
   return (
@@ -30,9 +31,22 @@ const About = () => {
               profondeur à l’ARCHE (Académie pour la Recherche et la
               Connaissance en Hypnose Ericksonienne) pour en faire mon métier.
             </p>
+            <p>
+              Je suis membre du SDMH (Syndicat Des Métiers de l'Hypnose) qui a
+              pour principal objectif de participer à la reconnaissance et au
+              développement des métiers qui utilisent l'hypnose dans le cadre de
+              l'accompagnement.
+            </p>
+            <h2>Formations:</h2>
+            <ul>
+              <li>Praticien en Hypnose Ericksonienne</li>
+              <li>Hypnose et Périnatalité</li>
+            </ul>
 
-            {/* <img src={logo} id={styles.logoImg} /> */}
-            <img src={logo2} id={styles.logoImg} alt="logo Arche" />
+            <div className={styles.logosContainer}>
+              <img src={logo} className={styles.logoImg} />
+              <img src={logo2} className={styles.logoImg} alt="logo Arche" />
+            </div>
           </div>
         </div>
       </div>

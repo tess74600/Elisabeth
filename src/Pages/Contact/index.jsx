@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import styles from "./contact.module.scss";
 import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
-
 //IMG
 import centralImg from "./assets/contactImg.jpg";
 
@@ -57,29 +56,45 @@ const Contact = () => {
         <div className={styles.infos}>
           <h2>Informations pratiques</h2>
           <p>
-            Je me déplace à votre domicile les lundis, mardis, jeudis de 9h à
-            15h et les vendredis de 9h à 18h sur un périmètre géographique
-            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6 .
+            {/* Je me déplace à votre domicile les
+            <b> lundis et jeudis de 9h à 15h </b> sur un périmètre géographique
+            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6. <br /> Je vous accueille
+            en cabinet à partir du 15 novembre 2024 les vendredis et samedis de
+            9h à 18h (17h les samedis). */}
+            Je me déplace <u>à votre domicile </u> les
+            <b> lundis et jeudis de 9h à 15h </b> sur un périmètre géographique
+            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6. <br /> Je vous accueille
+            <u> en cabinet </u> à partir du 15 novembre 2024 le vendredi de 9h à
+            18h et le samedi de 9h à 17h .
           </p>
-          <p className={styles.infosPrix}>
-            Le tarif d’une séance (1h) est de 70 euros.
-          </p>
-          <p>Réglement par chèques ou espèces.</p>
-          <p>
-            Les séances ne sont pas remboursées par la Sécurité Sociale,
-            certaines mutuelles peuvent néanmoins les prendre en charge au titre
-            de la prise en charge des médecines douces ou alternatives.
-          </p>
+          <div className={styles.iframeDiv}>
+            <p>Adresse: 49 Cours Gambetta - 69003 Lyon</p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.725366425883!2d4.845080475901905!3d45.753898771080166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5d34a3ad3d%3A0x8d9cd6fc3c38ea6e!2s49%20Cr%20Gambetta%2C%2069003%20Lyon!5e0!3m2!1sen!2sfr!4v1730450898769!5m2!1sen!2sfr"
+              width="400"
+              height="300"
+              style={{ border: 1 }}
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <button href="" className={styles.contactButton}>
+            Prendre Rendez-Vous
+          </button>
         </div>
         <div className={styles.contact}>
           <h2>Formulaire de contact</h2>
           <p>
-            Je me tiens à votre disposition via le formulaire ci-dessous ainsi
+            {/* Je me tiens à votre disposition via le formulaire ci-dessous ainsi
             que par téléphone au{" "}
             <a href="tel:0664427229" className={styles.tel}>
-              {" "}
               06 64 52 72 29
-            </a>
+            </a> */}
+            Je me tiens à votre disposition via le formulaire ci-dessous{" "}
+            <b>
+              pour toute question et toute réservation de séances à domicile.{" "}
+            </b>
           </p>
 
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
@@ -128,6 +143,18 @@ const Contact = () => {
           </form>
           <p className={styles.formMessage}>{formMess}</p>
         </div>
+      </div>
+      <div>
+        <p className={styles.infosPrix}>
+          Le tarif d’une séance (1h) est de 70 euros. (Réglement par chèques ou
+          espèces.)
+        </p>
+        {/* <p>Réglement par chèques ou espèces.</p> */}
+        <p>
+          Les séances ne sont pas remboursées par la Sécurité Sociale, certaines
+          mutuelles peuvent néanmoins les prendre en charge au titre de la prise
+          en charge des médecines douces ou alternatives.
+        </p>
       </div>
       <div className={styles.centralImgContainer}>
         <img src={centralImg} id={styles.centralImg} />

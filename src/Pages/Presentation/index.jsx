@@ -34,6 +34,21 @@ const Presentation = () => {
             <p>
               Les séances durent en moyenne 1 heure. Elles peuvent se pratiquer
               assis ou debout. Chaque séance est individualisée: nous partons de
+              vous et de votre besoin. La première séance est un temps d'échange
+              autour de vous et de vos attentes afin de définir vos besoins et
+              de dessiner un plan d'accompagnement adapté. Elle est aussi
+              l'occasion de vous faire expérimenter ce que peut être un état
+              d'hypnose au cours d'une séance. Les séances suivantes se
+              déroulent d’une manière générale en 3 temps: un premier temps
+              d’échange pour refaire ensemble un point et définir un objectif de
+              séance, un second temps d’induction où je vous guide dans un état
+              de conscience modifié et un troisième temps qui est un temps de
+              travail. Je décris souvent une séance comme un espace de
+              cocréation: je suis un fil conducteur qui vous aide à vous
+              connecter à vos propres ressources, à mieux comprendre quels sont
+              vos modes de fonctionnement, à mieux vous connaître.
+              {/* Les séances durent en moyenne 1 heure. Elles peuvent se pratiquer
+              assis ou debout. Chaque séance est individualisée: nous partons de
               vous et de votre besoin. Elles se déroulent d’une manière générale
               en 3 temps: un premier temps d’échange autour de votre
               problématique, un second temps d’induction où je vous guide dans
@@ -41,7 +56,7 @@ const Presentation = () => {
               temps de travail. Je décris souvent une séance comme un espace de
               cocréation: je suis un fil conducteur qui vous aide à vous
               connecter à vos propres ressources, à mieux comprendre quels sont
-              vos modes de fonctionnement, à mieux vous connaître.
+              vos modes de fonctionnement, à mieux vous connaître. */}
               {/* Dans cet espace-là nous restons toujours en contact verbalement au
               cours d’une séance, les échanges ne sortent pas d’un état
               d’hypnose – au contraire. */}
