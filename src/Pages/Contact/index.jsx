@@ -65,11 +65,10 @@ const Contact = () => {
             </i>
           </p>
           <p>
-            Je me déplace <u>à votre domicile </u> les lundis et jeudis de 9h à
+            Je me déplace <u>à votre domicile</u> les lundis et jeudis de 9h à
             15h sur un périmètre géographique couvrant Lyon 1, Lyon 2, Lyon 3 et
-            Lyon 6. <br /> Je vous accueille
-            <u> en cabinet </u> à partir du 15 novembre 2024 les vendredis de 9h
-            à 18h et les samedis de 9h à 17h .
+            Lyon 6. <br /> Je vous accueille <u>en cabinet</u> à partir du 15
+            novembre 2024 les vendredis de 9h à 18h et les samedis de 9h à 17h .
           </p>
           <Button width="L">
             <a
@@ -84,13 +83,12 @@ const Contact = () => {
             <span>Adresse: 49 Cours Gambetta - 69003 Lyon</span>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.725366425883!2d4.845080475901905!3d45.753898771080166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5d34a3ad3d%3A0x8d9cd6fc3c38ea6e!2s49%20Cr%20Gambetta%2C%2069003%20Lyon!5e0!3m2!1sen!2sfr!4v1730450898769!5m2!1sen!2sfr"
-              width="400"
-              height="300"
               style={{ border: 1 }}
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
               title="Adresse du cabinet"
+              className={styles.iframe}
             ></iframe>
           </div>
         </div>
