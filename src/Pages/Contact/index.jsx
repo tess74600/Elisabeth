@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import { useForm } from "react-hook-form";
 //IMG
 import centralImg from "./assets/contactImg.jpg";
+import Button from "../../components/Button";
 
 const Contact = () => {
   const {
@@ -55,20 +56,32 @@ const Contact = () => {
       <div className={styles.contactContainer}>
         <div className={styles.infos}>
           <h2>Informations pratiques</h2>
-          <p>
-            {/* Je me déplace à votre domicile les
-            <b> lundis et jeudis de 9h à 15h </b> sur un périmètre géographique
-            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6. <br /> Je vous accueille
-            en cabinet à partir du 15 novembre 2024 les vendredis et samedis de
-            9h à 18h (17h les samedis). */}
-            Je me déplace <u>à votre domicile </u> les
-            <b> lundis et jeudis de 9h à 15h </b> sur un périmètre géographique
-            couvrant Lyon 1, Lyon 2, Lyon 3 et Lyon 6. <br /> Je vous accueille
-            <u> en cabinet </u> à partir du 15 novembre 2024 le vendredi de 9h à
-            18h et le samedi de 9h à 17h .
+          <p className={styles.infosPrix}>
+            Le tarif d’une séance (1h) est de 70 euros. (Réglement par chèques
+            ou espèces.) <br />
+            <i>
+              Les séances ne sont pas remboursées par la Sécurité Sociale,
+              certaines mutuelles peuvent néanmoins les prendre en charge.
+            </i>
           </p>
+          <p>
+            Je me déplace <u>à votre domicile </u> les lundis et jeudis de 9h à
+            15h sur un périmètre géographique couvrant Lyon 1, Lyon 2, Lyon 3 et
+            Lyon 6. <br /> Je vous accueille
+            <u> en cabinet </u> à partir du 15 novembre 2024 les vendredis de 9h
+            à 18h et les samedis de 9h à 17h .
+          </p>
+          <Button width="L">
+            <a
+              href="https://elisabethfournier.simplybook.net/v2/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Prendre Rendez-Vous
+            </a>
+          </Button>
           <div className={styles.iframeDiv}>
-            <p>Adresse: 49 Cours Gambetta - 69003 Lyon</p>
+            <span>Adresse: 49 Cours Gambetta - 69003 Lyon</span>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5567.725366425883!2d4.845080475901905!3d45.753898771080166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f4ea5d34a3ad3d%3A0x8d9cd6fc3c38ea6e!2s49%20Cr%20Gambetta%2C%2069003%20Lyon!5e0!3m2!1sen!2sfr!4v1730450898769!5m2!1sen!2sfr"
               width="400"
@@ -77,24 +90,21 @@ const Contact = () => {
               allowfullscreen=""
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
+              title="Adresse du cabinet"
             ></iframe>
           </div>
-          <button href="" className={styles.contactButton}>
-            Prendre Rendez-Vous
-          </button>
         </div>
         <div className={styles.contact}>
           <h2>Formulaire de contact</h2>
           <p>
-            {/* Je me tiens à votre disposition via le formulaire ci-dessous ainsi
-            que par téléphone au{" "}
-            <a href="tel:0664427229" className={styles.tel}>
-              06 64 52 72 29
-            </a> */}
-            Je me tiens à votre disposition via le formulaire ci-dessous{" "}
-            <b>
-              pour toute question et toute réservation de séances à domicile.{" "}
-            </b>
+            Je me tiens à votre disposition via le formulaire ci-dessous pour
+            toute question et toute réservation de séances à domicile ainsi que
+            par téléphone au
+            <span>
+              <a href="tel:0664427229" className={styles.tel}>
+                06 64 52 72 29
+              </a>
+            </span>
           </p>
 
           <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
@@ -139,25 +149,14 @@ const Contact = () => {
               placeholder="Message"
               {...register("message")}
             ></textarea>
-            <button type="submit">Envoyer</button>
+            <Button type="submit" children="Envoyer" width="S" />
           </form>
           <p className={styles.formMessage}>{formMess}</p>
         </div>
       </div>
-      <div>
-        <p className={styles.infosPrix}>
-          Le tarif d’une séance (1h) est de 70 euros. (Réglement par chèques ou
-          espèces.)
-        </p>
-        {/* <p>Réglement par chèques ou espèces.</p> */}
-        <p>
-          Les séances ne sont pas remboursées par la Sécurité Sociale, certaines
-          mutuelles peuvent néanmoins les prendre en charge au titre de la prise
-          en charge des médecines douces ou alternatives.
-        </p>
-      </div>
+
       <div className={styles.centralImgContainer}>
-        <img src={centralImg} id={styles.centralImg} />
+        <img src={centralImg} id={styles.centralImg} alt="plant" />
       </div>
     </>
   );

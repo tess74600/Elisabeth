@@ -11,37 +11,23 @@
       width: 90%;
       margin: 0 auto;
     }
-    .infosPrix {
-      display: flex;
-      gap: var(--gap-xs);
-    }
 
     .iframeDiv {
       display: flex;
       justify-content: center;
-      // align-items: center;
       margin-bottom: 20px;
       flex-direction: column;
-      p {
+      span {
         align-self: flex-start;
         font-style: normal;
         font-weight: bold;
         text-decoration: underline;
+        margin: 20px 0;
       }
     }
 
-    .contactButton {
-      // width: 40%;
-      margin: 20px 0;
-      cursor: pointer;
-      background: var(--green300);
+    a {
       color: var(--white400);
-      padding: var(--padding-xs) var(--padding-lg);
-      text-transform: uppercase;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
     }
   }
 
@@ -49,21 +35,6 @@
     width: 80%;
     margin: 0 auto;
 
-    // p {
-    //   position: relative;
-    //   .tel {
-    //     @media screen and (max-width: 1004px) {
-    //       position: absolute;
-    //       bottom: -5px;
-    //       left: 0;
-    //     }
-    //     @media screen and (max-width: 940px) {
-    //       position: relative;
-    //       bottom: 0;
-    //       left: 0;
-    //     }
-    //   }
-    // }
     @media screen and (max-width: 1066px) {
       width: 85%;
     }
@@ -73,6 +44,10 @@
 
       // margin: 0;
     }
+
+    p {
+      margin-bottom: 30px;
+    }
     // @media screen and (max-width: 668px) {
     //   width: 90%;
     //   // margin: 0;
@@ -81,10 +56,7 @@
       display: flex;
       flex-direction: column;
       gap: var(--gap-sm);
-      // @media screen and (max-width: 668px) {
-      //   justify-content: center;
-      //   align-items: center;
-      // }
+
       input[type="text"],
       input[type="mail"],
       textarea {
@@ -107,19 +79,6 @@
       textarea {
         resize: none;
       }
-      button[type="submit"] {
-        width: 20%;
-        margin: 0 auto;
-        cursor: pointer;
-        background: var(--green300);
-        color: var(--white400);
-        padding: var(--padding-xs) var(--padding-lg);
-        text-transform: uppercase;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: none;
-      }
     }
     .formMessage {
       text-align: center;
@@ -139,4 +98,8 @@
     object-fit: cover;
     max-width: 100%;
   }
+}
+.infosPrix {
+  // width: 90%;
+  // margin: 0;
 }

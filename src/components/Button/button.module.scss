@@ -1,0 +1,32 @@
+.button {
+  cursor: pointer;
+  background: var(--green300);
+  color: var(--white400);
+  // padding: var(--padding-xs) var(--padding-lg);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.L {
+  // margin: 30px 0;
+  width: 40%;
+  padding: var(--padding-xs);
+  margin-top: 10px;
+  @media screen and (max-width: 1152px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 900px) {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: 521px) {
+    width: 60%;
+  }
+}
+.S {
+  width: 30%;
+  padding: var(--padding-xs) var(--padding-lg);
+  // margin: 0 auto;
+}

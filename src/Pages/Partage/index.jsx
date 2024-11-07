@@ -63,7 +63,6 @@ const Partage = () => {
             required: "S'il-vous plaît, indiquez votre prénom",
           })}
         />
-        {/* <input type="date" name="date" id="" {...register("date")} /> */}
         <textarea
           name="message"
           id=""

@@ -8,7 +8,6 @@ const Mentions = () => {
         <h3>Editeur du site</h3>
         <ul>
           <li>Nom : Elisabeth Fournier</li>
-          {/* <li>Adresse</li> */}
           <li>Téléphone: 06 64 52 72 29</li>
           <li>E-mail : elisabethfournier@outlook.com</li>
           <li>Statut professionnel : entrepreneur individuel</li>
@@ -30,7 +29,7 @@ const Mentions = () => {
           <li>Adresse : 2 rue Kellermann, 59100 Roubaix, France</li>
           <li>Téléphone : +33 9 72 10 10 07</li>
           <li>
-            Site Web :{" "}
+            Site Web :
             <a href="https://www.ovh.com" target="_blank">
               www.ovh.com
             </a>
@@ -67,18 +66,6 @@ const Mentions = () => {
         </p>
       </div>
       <div>
-        {/* <h3>Données personnelles</h3>
-        <p>
-          Les données recueillies via le formulaire de contact sont destinées à
-          la réponse à votre demande. Elles ne sont pas partagées avec des tiers
-          sans votre consentement. Vous disposez d'un droit d'accès, de
-          rectification et de suppression des données vous concernant, que vous
-          pouvez exercer en nous contactant par e-mail à{" "}
-          <a href="mailto:elisabethfournier@outlook.com">
-            elisabethfournier@outlook.com
-          </a>
-          .
-        </p> */}
         <h3>Données personnelles</h3>
         <p>
           Les informations recueillies via le formulaire de contact sont
@@ -95,7 +82,6 @@ const Mentions = () => {
           <a href="mailto:elisabethfournier@outlook.com">
             elisabethfournier@outlook.com
           </a>
-          .
         </p>
         <p>
           Vos données sont conservées pendant une durée maximale de 1an à
