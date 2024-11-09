@@ -37,6 +37,9 @@
 
     a {
       color: var(--white400);
+      @media screen and (max-width: 521px) {
+        font-size: 1.3em;
+      }
     }
   }
 
