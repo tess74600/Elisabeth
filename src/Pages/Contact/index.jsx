@@ -67,8 +67,8 @@ const Contact = () => {
           <p>
             Je me déplace <u>à votre domicile</u> les lundis et jeudis de 9h à
             15h sur un périmètre géographique couvrant Lyon 1, Lyon 2, Lyon 3 et
-            Lyon 6. <br /> Je vous accueille <u>en cabinet</u> à partir du 15
-            novembre 2024 les vendredis de 9h à 18h et les samedis de 9h à 17h .
+            Lyon 6. <br /> Je vous accueille <u>en cabinet</u> les vendredis de
+            9h à 18h et les samedis de 9h à 17h .
           </p>
           <Button width="L">
             <a
