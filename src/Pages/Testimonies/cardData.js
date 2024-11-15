@@ -32,6 +32,6 @@ export const cards = [
     author: "Anne-So L",
     date: "octobre 2024",
     message:
-      "Ma fille de 10 ans est angoissée. Elle était en confiance avec Élisabeth. Ainsi Élisabeth lui a montré plusieurs exercices d auto hypnose que ma fille met en pratique aujourd'hui quand elle sent que son stress monte. Merci !!",
+      "Ma fille de 10 ans est angoissée. Elle était en confiance avec Élisabeth. Ainsi Élisabeth lui a montré plusieurs exercices d'auto hypnose que ma fille met en pratique aujourd'hui quand elle sent que son stress monte. Merci !!",
   },
 ];
