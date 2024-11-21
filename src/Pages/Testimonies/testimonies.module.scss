@@ -1,5 +1,6 @@
 .testimoniesContainer {
   margin-top: var(--margin-md);
+  border-bottom: 1px solid var(--green300);
 
   .testimoniesTitle {
     display: flex;
@@ -27,5 +28,12 @@
     gap: var(--gap-xs);
     padding: var(--padding-sm);
     justify-content: center;
+  }
+}
+
+.googleTitle {
+  margin-top: 30px;
+  @media screen and (max-width: 800px) {
+    text-align: center;
   }
 }
