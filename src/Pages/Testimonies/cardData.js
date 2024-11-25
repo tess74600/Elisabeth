@@ -34,4 +34,11 @@ export const cards = [
     message:
       "Ma fille de 10 ans est angoissée. Elle était en confiance avec Élisabeth. Ainsi Élisabeth lui a montré plusieurs exercices d'auto hypnose que ma fille met en pratique aujourd'hui quand elle sent que son stress monte. Merci !!",
   },
+  {
+    id: 6,
+    author: "Magali T",
+    date: "novembre 2024",
+    message:
+      "Je recommande vivement Elisabeth. Elle sait instaurer une relation de confiance et de bienveillance. J’ai beaucoup apprécié sa finesse intellectuelle et émotionnelle, ainsi que sa générosité et sa vibrante humanité. ✨🙏✨",
+  },
 ];
