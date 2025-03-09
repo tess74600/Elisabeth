@@ -4,13 +4,12 @@ import styles from "./about.module.scss";
 //IMG
 import leftImg from "./assets/photo.jpg";
 import logo from "./assets/LogoSDMH.png";
-import logo2 from "./assets/logoArche.png";
 
 const About = () => {
   return (
     <div className={styles.aboutContainer}>
       <div className={styles.left}>
-        <img src={leftImg} alt="photo de la praticienne" />
+        <img src={leftImg} alt="portrait de la praticienne" />
       </div>
       <div className={styles.right}>
         <div className={styles.rightContent}>
@@ -22,26 +21,34 @@ const About = () => {
             techniques qu’elle m’a transmises, notamment d’auto-hypnose, m’ont
             accompagnée jusqu’à mon accouchement, dans ce contexte si
             particulier d’un accouchement en période COVID. Ce fut mon premier
-            contact avec l’hypnose, qui, depuis a pris de plus en plus de place
-            dans ma vie, à tel point que j’ai décidé de me former en profondeur
-            à l’ARCHE (Académie pour la Recherche et la Connaissance en Hypnose
-            Ericksonienne) pour en faire mon métier.
+            contact avec l’hypnose qui, depuis, a pris de plus en plus de place
+            dans ma vie. <br /> <br /> J’ai commencé à me former plus
+            spécifiquement à l’auto-hypnose, avant d’entamer un cursus complet à
+            l’ARCHE (Académie pour la Recherche et la Connaissance en Hypnose
+            Ericksonienne) pour en faire aujourd’hui mon métier. <br /> <br />
+            Intéressée au niveau personnel par les thématiques liées aux
+            <b> troubles du sommeil</b> - tant au niveau des adultes que des
+            enfants - et à la gestion de l'
+            <b>
+              <u> anxiété</u>
+            </b>
+            , je me suis spécialisée dans ces deux champs d'accompagnement ainsi
+            que dans l’accompagnement des femmes autour des sujets de la
+            <b> périnatalité</b> (projet de natalité, accompagnement à la
+            naissance et post-partum).
           </p>
-          {/* <p>
-            Je suis membre du SDMH (Syndicat Des Métiers de l'Hypnose) qui a
-            pour principal objectif de participer à la reconnaissance et au
-            développement des métiers qui utilisent l'hypnose dans le cadre de
-            l'accompagnement.
-          </p> */}
+
           <h2>Formations:</h2>
           <ul>
-            <li>Praticien en Hypnose Ericksonienne</li>
-            <li>Hypnose et Périnatalité</li>
+            <li> Praticienne en Hypnose Ericksonienne (ARCHE)</li>
+            <li> Hypnose et périnatalité (ARCHE)</li>
+            <li> Hypnose et gestion de l’anxiété (Psynapse)</li>
+            <li>Hypnose et sommeil (Psynapse)</li>
+            <li> Auto-hypnose (IFHE)</li>
           </ul>
 
           <div className={styles.logosContainer}>
             <img src={logo} alt="logo SDMH" />
-            <img src={logo2} alt="logo Arche" />
           </div>
         </div>
       </div>

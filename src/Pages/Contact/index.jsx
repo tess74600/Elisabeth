@@ -59,16 +59,20 @@ const Contact = () => {
           <p className={styles.infosPrix}>
             Le tarif d’une séance (1h) est de 70 euros. (Réglement par chèques
             ou espèces.) <br />
+            Les séances pour les enfants (jusqu'à l'âge de 12 ans) durent en
+            moyenne 35 minutes et sont au tarif de 40€.
+            <br />
             <i>
               Les séances ne sont pas remboursées par la Sécurité Sociale,
               certaines mutuelles peuvent néanmoins les prendre en charge.
             </i>
           </p>
           <p>
-            Je me déplace <u>à votre domicile</u> les lundis et jeudis de 9h à
-            15h sur un périmètre géographique couvrant Lyon 1, Lyon 2, Lyon 3 et
-            Lyon 6. <br /> Je vous accueille <u>en cabinet</u> les vendredis de
-            9h à 18h et les samedis de 9h à 17h .
+            Je vous propose des séances <u>en visio</u> les lundis et jeudis de
+            9h à 18h.
+            <br /> Je vous accueille <u>en cabinet</u> les vendredis de 9h à 19h
+            et les samedis de 9h à 18h. Les séances en visio sont également
+            possibles sur ces créneaux-là.
           </p>
           <Button width="L">
             <a
@@ -95,9 +99,8 @@ const Contact = () => {
         <div className={styles.contact}>
           <h2>Formulaire de contact</h2>
           <p>
-            Je me tiens à votre disposition via le formulaire ci-dessous pour
-            toute question et toute réservation de séances à domicile ainsi que
-            par téléphone au
+            Je me tiens à votre disposition pour toute question via le
+            formulaire ci-dessous ainsi que par téléphone au
             <span>
               <a href="tel:0664427229" className={styles.tel}>
                 06 64 52 72 29

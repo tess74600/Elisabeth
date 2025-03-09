@@ -37,6 +37,17 @@
         }
       }
     }
+    .espacement {
+      padding-bottom: 10px;
+    }
+    ol {
+      padding-left: 30px;
+      padding-bottom: 10px;
+      // padding-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
   }
 
   #rightImg {
